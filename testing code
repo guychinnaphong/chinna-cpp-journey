@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int object;
+    cout << "enter your starting integer : ";
+    cin >> object;
+    for(object ; object <= 100 ; object++) {
+        cout << object << endl;
+    }
+    return 0;
+}
+
+_____________________________________________________________
+
+#include <iostream>
+using namespace std;
+int main() {
+    int object;
+    cout << "enter your starting integer : ";
+    cin >> object;
+    if(cin >> object){
+        for(object ; object <= 100 ; object++) {
+        cout << object << endl;
+        }
+    }
+    else {
+        cout << "your input is not an integer please try again : ";
+        cin.clear()
+        cin(object.length(), ' ')
+    }
+    return 0;
+}
+____________________________________________________________
+
+#include <iostream>
+using namespace std;
+int main() {
+    int object;
+    cout << "enter your starting integer in range of 100 : ";
+    while(!(cin >> object)) {
+        cout << "Please enter an integer, try again : ";
+        cin.clear();
+        cin.ignore(100, '\n');
+    }
+    for(object; object <= 100; object++) {
+        cout << object << endl;
+    }
+    return 0;
+}
+
+___________________________________________________________
+
