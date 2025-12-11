@@ -72,11 +72,99 @@ ___________________________________________________________
 
 #include <iostream>
 using namespace std;
-int main {
+int main() {
+    int object;
+    cout << "enter your starting integer in range of under 100 : ";
+    cin >> object;
     while(cin.fail()) {
-        cout << "please enter an integer, try again : "
+        cout << "please enter an integer, try again : ";
         cin.clear();
-        cin.ignore(1000, '\n')
+        cin.ignore(1000, '\n');
+        cin >> object;
+        }
+    for(object ; object <= 100; object++) {
+        cout << object << endl;
+        }
+}
+
+__________________________________________________________________
+
+#include <iostream>
+using namespace std;
+int main() {
+    int object;
+    cout << "enter your starting integer in range of under 100 : ";
+    cin >> object;
+    while(cin.fail()) {
+        cout << "please enter an integer, try again : ";
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cin >> object;
+        }
+    if(object > 100) {
+        cout << "please enter an integer under 100, try again : ";
+        cin.clear();
+        cin.ignore(1000, '\n');
         cin >> object;
     }
+    else {
+        for(object ; object <= 100; object++) {
+            cout << object << endl;
+        }
+    }
 }
+
+___________________________________________________________________________
+
+#include <iostream>
+using namespace std;
+int main() {
+    int object;
+    cout << "enter your starting integer in range of under 100 : ";
+    cin >> object;
+    while(cin.fail()) {
+        cout << "please enter an integer, try again : ";
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cin >> object;
+        }
+    while(object > 100) {
+        cout << "please an integer that is under 100, try again : ";
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cin >> object;
+    }
+    for(object ; object <= 100 ; object++) {
+        cout << object << endl;
+    }
+}
+_______________________________________________________________________________
+
+#include <iostream>
+using namespace std;
+int main() {
+    int object;
+    cout << "enter your starting integer in range of under 100 : ";
+    cin >> object;
+    while(cin.fail() || object > 100) {
+        if(cin.fail()) {
+            cout << "please enter an integer type of input, try again : ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cin >> object;
+        }
+        else if(object > 100) {
+            cout << "please enter and integer that is in range of under 100, try again : ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cin >>  object;
+        }
+        else {
+            for(object ; object <= 100 ; object++) {
+            cout << object << endl;
+            }
+        }
+    }
+    return 0;
+}
+_______________________________________________________________________________________
