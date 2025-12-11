@@ -36,6 +36,25 @@ ____________________________________________________________
 using namespace std;
 int main() {
     int object;
+    cout << "enter your starting integer : ";
+    cin >> object;
+    while(object != 100) {
+        if(!(cin >> object)){
+            cout << "your input is not an integer please try again : ";
+            cin.clear();
+            cin.ignore(100, ' ');
+        }
+        else {
+            for(object ; object <= 100 ; object++) {
+            cout << object << endl;
+            }
+
+________________________________________________________
+
+#include <iostream>
+using namespace std;
+int main() {
+    int object;
     cout << "enter your starting integer in range of 100 : ";
     while(!(cin >> object)) {
         cout << "Please enter an integer, try again : ";
@@ -50,3 +69,14 @@ int main() {
 
 ___________________________________________________________
 
+
+#include <iostream>
+using namespace std;
+int main {
+    while(cin.fail()) {
+        cout << "please enter an integer, try again : "
+        cin.clear();
+        cin.ignore(1000, '\n')
+        cin >> object;
+    }
+}
