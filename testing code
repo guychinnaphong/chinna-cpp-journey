@@ -226,3 +226,22 @@ int main() {
 }
 
 _______________________________________________________________________________
+
+#include <iostream>
+#include <string>
+#include <limits>
+using namespace std;
+int main() {
+    int object;
+    cout << "please enter and integer with value under 100 : ";
+    while(!(cin >> object) || object > 100) {
+        if(object > 100){
+            cout << "please enter an integer with value under 100, try again : ";
+            cin.clear()
+            cin.ignore(numeric_limits<streamsize>::max(), '\n')
+        }
+        else if(cin.fail()) {
+            
+        }
+    }
+}
