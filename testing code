@@ -168,3 +168,44 @@ int main() {
     return 0;
 }
 _______________________________________________________________________________________
+
+#include <iostream>
+#include <typeinfo>
+using namespace std;
+int main() {
+    int object;
+    cout << "enter your starting integer in range of under 100 : ";
+    cin >> object;
+    while(cin.fail() || object > 100) {
+        if(object < 0 || object >= 100 || ) {
+            for(object ; object <= 100 ; object++) {
+            cout << object << endl;
+            return 0;
+            }
+        }
+        else if(object > 100) {
+            cout << "please enter and integer that is in range of under 100, try again : ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cin >>  object;
+        }
+        else {
+            cout << "please enter an integer type of input, try again : ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cin >> object;
+        }
+    }
+    return 0;
+}
+
+___________________________________________________________________________________
+
+#include <iostream>
+#include <typeinfo>
+#include <string>
+int main() {
+    int number =  67;
+    std::string word = "hello man!";
+    std::cout << typeid(number);
+}
