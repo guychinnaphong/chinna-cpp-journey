@@ -203,9 +203,26 @@ ________________________________________________________________________________
 
 #include <iostream>
 #include <typeinfo>
-#include <string>
+using namespace std;
 int main() {
-    int number =  67;
-    std::string word = "hello man!";
-    std::cout << typeid(number);
+    int object;
+    cout << "enter your starting integer in range of under 100 : ";
+    cin >> object;
+    while(cin.fail() || object > 100) {
+        if(!(typeid(object).name() == i)) {
+            cout << "please an integer type of input, try again : ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cin >> object;
+        }
+        else if(object > 100) {
+            cout << "please enter an integer with value under 100, try again : ";
+        } 
+    }
+    for(object ; object <= 100 ; object++) {
+            cout << object << endl;
+            return 0;
+    return 0;
 }
+
+_______________________________________________________________________________
