@@ -237,11 +237,17 @@ int main() {
     while(!(cin >> object) || object > 100) {
         if(object > 100){
             cout << "please enter an integer with value under 100, try again : ";
-            cin.clear()
-            cin.ignore(numeric_limits<streamsize>::max(), '\n')
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         else if(cin.fail()) {
-            
+            cout <<"please enter an integer type of input, try again : ";
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
     }
+    for(object ; object <= 100 ; object++) {
+        cout << object << endl;
+    }
+    return  0;
 }
