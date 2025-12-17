@@ -1,14 +1,27 @@
 # EXPLAINING MY CODE
 
-#include <iostream> is used for to start writing c++  
-int main() {} used for actual code writing and not setting up evironment  
-using namespace std so i dont have to write std:: over and over again, though shouldn't be in big project
+this is an attempt to make functionality code which will start counting to 100 as user desired, if user enter 5 output <br>
+<br>
+should count from 5 to 100 <br>
+<br>
+#include <iostream> is used for to start writing c++ <br>
+<br>
+int main() {} used for actual code writing and not setting up evironment <br>
+<br>
+using namespace std so i dont have to write std:: over and over again, though shouldn't be in big project <br>
+<br>
+'\n' use to start new line<br>
+<br>
+endl or std::endl use to start new line <br>
+<br>
+i was doing practice on sololearn and starts questioning my knowledge... so i began wandering out with gpt 5 to find various ploblem set to do so i will absorbs knowledges into my brain and these are attempt to do random function of code, somes broken but some actually worked!  
 
-i was doing practice on sololearn and starts questioning my knowledge... so i began wandering out with gpt 5 to find various ploblem set to do so i will absorbs knowledges into my brain and these are attempt to do random function of code, somes broken but some actually worked!
 
 ### please correct me if im wrong on any of these im still a beginner, thanks!
-_________________________________________________________________________________________
 
+_________________________________________________________________________________________ 
+
+<br>
 
 ## RAW 1st CODE
 ```cpp
@@ -24,10 +37,10 @@ int main() {
     return 0;
 }
 ```
+<br>
 ### 1st CODE DESCRIPTION
-
-
-
+<br>
+<br>
 "this code us namespace std so i dont have to do ::std every time i typed code
 i first declare int main() to start writing block of code, then declare "object" as integer type of data, next block of code "cout" give output "enter your starting integer : " then give user an input object to type in an integer, value of an object will be starting point for counting until value hit 100"
 
@@ -185,7 +198,7 @@ after that come with else statement which means that objectt passed if statement
 
 
 
-# FIXED VERION OF RAW 3rd CODE 
+# ATTEMPT TO FIX VERION OF RAW 3rd CODE 
 ```cpp
 #include <iostream>
 using namespace std;
@@ -208,7 +221,33 @@ int main() {
 }
 ```
 ### description
-it works fine! just lack feature
+it isn't fixed fully
+
+*output terminal when you attempt to input actual number under 100*
+```cpp
+enter your starting integer : 5
+5
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+```
+* note that output went normally from starting point to 100
+### what's wrong?
+1. you have to enter input 2 times in order to get code working
+
+   
 
 # FOURTH RAW CODE
 ```cpp
