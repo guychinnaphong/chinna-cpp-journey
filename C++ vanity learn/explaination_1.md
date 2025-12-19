@@ -1,24 +1,38 @@
 # EXPLAINING MY CODE
 
 this is an attempt to make functionality code which will start counting to 100 as user desired, if user enter 5 output <br>
+
 <br>
+
 should count from 5 to 100 <br>
+
 <br>
+
 #include <iostream> is used for to start writing c++ <br>
+
 <br>
+
 int main() {} used for actual code writing and not setting up evironment <br>
+
 <br>
+
 using namespace std so i dont have to write std:: over and over again, though shouldn't be in big project <br>
+
 <br>
+
 '\n' use to start new line<br>
+
 <br>
+
 endl or std::endl use to start new line <br>
+
 <br>
+
 i was doing practice on sololearn and starts questioning my knowledge... so i began wandering out with gpt 5 to find various ploblem set to do so i will absorbs knowledges into my brain and these are attempt to do random function of code, somes broken but some actually worked!  
 
 
-### please correct me if im wrong on any of these im still a beginner, thanks!
-
+### please correct me if im wrong on any of these im still a beginner, thanks! <br>
+<br>
 _________________________________________________________________________________________ 
 
 <br>
@@ -38,31 +52,33 @@ int main() {
 }
 ```
 <br>
+
 ### 1st CODE DESCRIPTION
 <br>
 <br>
+
 "this code us namespace std so i dont have to do ::std every time i typed code
-i first declare int main() to start writing block of code, then declare "object" as integer type of data, next block of code "cout" give output "enter your starting integer : " then give user an input object to type in an integer, value of an object will be starting point for counting until value hit 100"
+i first declare int main() to start writing block of code, then declare "object" as integer type of data, next block of code "cout" give output "enter your starting integer : " then give user an input object to type in an integer, value of an object will be starting point for counting until value hit 100" <br>
 
+<br>
 
+1. i declared int main() to start writing codes <br>
+2. i declare object as int <br>
+3. output "enter your starting integer:" <br>
+4. give user ability to input value using std::cin (shortend to cin) <br>
+5. if input value is integer that is less than 100 it'll be starting point to count to 100 <br>
+<br>
+<br>
 
-1. i declared int main() to start writing codes
-2. i declare object as int
-3. output "enter your starting integer:"
-4. give user ability to input value using std::cin (shortend to cin)
-5. if input value is integer that is less than 100 it'll be starting point to count to 100
+__+ use namespace std to shorten std:: part__ ✅ <br> 
+_- C++ will raise error if enter any other type of data than integer_ ❌ <br>
+*- code will be executed but no output if value is __more or equal to 100__* ❌ <br>
+<br>
+<br>
+code worked fine 🔥 <br>
 
+### 1st verion with std:: <br>
 
-
-__+ use namespace std to shorten std:: part__ ✅  
-_- C++ will raise error if enter any other type of data than integer_ ❌  
-*- code will be executed but no output if value is __more or equal to 100__* ❌   
-
-
-
-code worked fine 🔥  
-
-### 1st verion with std::
 ```cpp
 #include <iostream>
 
@@ -76,6 +92,7 @@ int main() {
     return 0;
 }
 ```
+
 ______________________________________________________________________________________
 
 
