@@ -1,14 +1,10 @@
 # EXPLAINING MY CODE
 
-this is an attempt to make functionality code which will start counting to 100 as user desired, if user enter 5 output <br>
+this is an attempt to make functionality code which will start counting to 100 as user desired, if user enter 5 output should count from 5 to 100 <br>
 
 <br>
 
-should count from 5 to 100 <br>
-
-<br>
-
-#include <iostream> is used for to start writing c++ <br>
+#include < iostream > is used for to start writing c++, also use to install some stuff. it's like setting up a back stage to prepare for show but instead you built some software <br>
 
 <br>
 
@@ -20,7 +16,7 @@ using namespace std so i dont have to write std:: over and over again, though sh
 
 <br>
 
-'\n' use to start new line<br>
+'\n' use to start new line <br>
 
 <br>
 
@@ -53,7 +49,7 @@ int main() {
 ```
 <br>
 
-### 1st CODE DESCRIPTION
+### 1st CODE OPERATION
 <br>
 <br>
 
@@ -118,7 +114,7 @@ int main() {
     return 0;
 }
 ```
-### 2nd CODE DESCRIPTION
+### 2nd CODE OPERATION
 "also use namespace std so i dont have to type it again and again, first action is output "enter your starting integer : " then allow user to give input, the input will be assign to int type object called "object". after that i take object again but in if statement which killed some part of codes?, i want input to be starting point where it'll count until 100 and increase by 1 time per output (if input is 1 output will be like : 1, 2, 3, 4, 5... until 100 but with new line in every output).  after that i do else statement which will work once code above failed, it'll give output "your input is not an integer please try again", clear the input and then something (i probably did not finish this code at cin(object.length) part, my code did not work so there iis possible that code below this statement is fixed or attempt to fix this."
 
 
@@ -178,7 +174,7 @@ int main() {
             cout << object << endl;
             }
 ```
-### DESCRIPTION
+### 3rd CODE OPERATION
 this code above also use namespace so i dont have to write ::std everytime again, first start off by declaring and integer type object called "object"  since this code is prob fixed verion of code above. then after i output "enter your starting integer : " and allow user to input value. after that i try doing loop with rule "if object is not equal to 100" for some reason. then follow up with if statement if input of object failed, output "your input is not an integer please try again : " then clear an input, ignore 100 character but stop at space bar " "
 after that come with else statement which means that objectt passed if statement above, object will go in for loop. object will be starting number for counting in this for loop with rule of only allow loop to work when object is less than or equal to 100, object will increase by 1 per output (object++).... this code is also not finished so i made this finished verion below, it works perfectly fine just lack of polishing which make it looks bad
 
@@ -237,7 +233,7 @@ int main() {
     }
 }
 ```
-### description
+### DESCRIPTION
 it isn't fixed fully
 
 *output terminal when you attempt to input actual number under 100*
@@ -266,7 +262,7 @@ enter your starting integer : 5
 
    
 
-# FOURTH RAW CODE
+# 4th RAW CODE
 ```cpp
 #include <iostream>
 using namespace std;
@@ -284,9 +280,26 @@ int main() {
     return 0;
 }
 ```
-### FOURTH CODE DESCRIPTION
-1. i use namespace std not to type ::std multiple time
-2. i declare int main() to start writing code
-3. i declare object called "object" as a name, type is integer
-4. i output "enter your starting integer in range of 100 : "
-5. i give
+### 4th CODE OPERATION
+1. i use namespace std not to type ::std multiple time <br>
+2. i declare int main() to start writing code <br>
+3. i declare object called "object" as a name, type is integer <br>
+4. i output "enter your starting integer in range of 100 : " <br>
+5. i wrote while loop with have statement which... is statement but also allow user to enter input. "i allowed user to  input a value which have to be same type as variable i use (in this case int or integer), if process failed i'll proceed the looping operation and if not. you can go through to for loop below" <br>
+6. if input value error occur while loop will output "Please enter an integer, try again : "  <br>
+7. while loop will clear input terminal with cin.clear() <br>
+8. cin.ignore() will ignore all input data until '\n' (a way to start new line) <br>
+9. loop go back to while loop's statement and allow user to input value again <br>
+10. if input value is valid (in this case value must be type integer like "object" variable which we assign it to take input value) code will not run the while loop part because it is false in loop's statement <br>
+11. for loop statement "loop will start at value of "object" variable; loop will only work if value of "object" is less than or equal to 100; object will add itself up by 1 in each loop" <br>
+12. after for loop statement loop will output value of variable "object"  that point of the loop <br>
+13. after all operation is done everything will end at return 0; <br>
+<br>
+<br>
+*this code worked at best performance i can think of right now! 🔥❤️* <br>
+<br>
+**+ EVERYTHING WAS FIXED AND ALL OPERATIONAL AS OBJECT REQUIRES** ✅ <br>
+**+ no more input 2 times due to inexperience** ✅ <br>
+**+ while loop worked properly** ✅ <br>
+**+ if value is right (is an integer or int in this case) while loop will not work and code operation will skip dircetly to counting process (for loop part)** ✅ <br>
+
