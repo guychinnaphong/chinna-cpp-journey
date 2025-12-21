@@ -293,13 +293,353 @@ int main() {
 10. if input value is valid (in this case value must be type integer like "object" variable which we assign it to take input value) code will not run the while loop part because it is false in loop's statement <br>
 11. for loop statement "loop will start at value of "object" variable; loop will only work if value of "object" is less than or equal to 100; object will add itself up by 1 in each loop" <br>
 12. after for loop statement loop will output value of variable "object"  that point of the loop <br>
-13. after all operation is done everything will end at return 0; <br>
+13. after all operation is done everything will end at return 0;  
+
+*this code worked at best performance i can think of right now!* 🔥❤️  
+
+**+ EVERYTHING WAS FIXED AND ALL OPERATIONAL AS OBJECT REQUIRES** ✅  
+**+ no more input 2 times due to inexperience** ✅  
+**+ while loop worked properly** ✅  
+**+ if value is right (is an integer or int in this case) while loop will not work and code operation will skip dircetly to counting process (for loop part)** ✅  
+
+**i learned how to properly write code through ploblem!**
+
+example of code when i enter 2 incorrect input and last 1 correct input : <br>
+  
+```cpp
+enter your starting integer in range of 100 : this is string
+Please enter an integer, try again : brother
+Please enter an integer, try again : 67
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+```
+_________________________________________________________________________
+
 <br>
+
+## 5th RAW CODE
+```cpp
+#include <iostream>
+using namespace std;
+int main() {
+    int object;
+    cout << "enter your starting integer in range of under 100 : ";
+    cin >> object;
+    while(cin.fail()) {
+        cout << "please enter an integer, try again : ";
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cin >> object;
+        }
+    for(object ; object <= 100; object++) {
+        cout << object << endl;
+        }
+}
+```
+
 <br>
-*this code worked at best performance i can think of right now! 🔥❤️* <br>
+
+## 5th CODE OPERATION  
+*output is almost identical to 4th code due to slight implimentation, i changed statement of while loop. from giving output ability and consider it directly in same code i instead seperate taking input and considering validation of input part.
+and i slightly altered output message and add wrote code at the end of while loop to make output identical*
+
+_______________________________________________________________________
+
 <br>
-**+ EVERYTHING WAS FIXED AND ALL OPERATIONAL AS OBJECT REQUIRES** ✅ <br>
-**+ no more input 2 times due to inexperience** ✅ <br>
-**+ while loop worked properly** ✅ <br>
-**+ if value is right (is an integer or int in this case) while loop will not work and code operation will skip dircetly to counting process (for loop part)** ✅ <br>
+
+## 6th RAW CODE
+```cpp
+#include <iostream>
+using namespace std;
+int main() {
+    int object;
+    cout << "enter your starting integer in range of under 100 : ";
+    cin >> object;
+    while(cin.fail()) {
+        cout << "please enter an integer, try again : ";
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cin >> object;
+        }
+    if(object > 100) {
+        cout << "please enter an integer under 100, try again : ";
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cin >> object;
+    }
+    else {
+        for(object ; object <= 100; object++) {
+            cout << object << endl;
+        }
+    }
+}
+```
+<br>
+
+## 6th CODE OPERATION  
+1. i declared int and object  
+2. i output "enter your starting integer in range of under 100 : "  
+3. i give user ability to enter input value  
+4. i do whilee loop which will work when input failed ot error, will output "please enter an integer, try again : " clear ingore and give user ability to enter right value again. will loop forever and not break until input value is right (under 100)  
+5. i use if function with statement "if object is more than 100", output "please enter an integer under 100, try again : " and do same operation as 4th operation of this code  
+6. i use else which in my mind will do number counting operation as normal  
+<br>
+
+**+ my attempt to build in more feature to my code** ✅  
+**- i failed everything and fuck up the whole process** ❌  
+**- i put counting process code in if else again, it's also not even in a loop so it never start counting** ❌  
+<br>
+
+*hell of a mess 💔*  
+<br>
+
+**and i learned :**  
+- i have to take a break or else my brain will deep fry itself and explode into supernova, completely destroy ability to read code in that day
+- nothing else because i already learns about not to have my counting operation in a loop
+<br>
+
+## FIX VERION OF 6th CODE
+```cpp
+#include <iostream>
+using namespace std;
+int main() {
+    int object;
+    cout << "enter your starting integer in range of under 100 : ";
+    cin >> object;
+    while(cin.fail() || object > 100) {
+        if(cin.fail()){
+                cout << "please enter an integer, try again : ";
+                cin.clear();
+                cin.ignore(1000, '\n');
+                cin >> object;
+        }
+        else if(object > 100){
+                cout << "please enter an integer under 100, try again : ";
+                cin.clear();
+                cin.ignore(1000, '\n');
+                cin >> object;
+        }
+    }
+    for(object ; object <= 100; object++) {
+            cout << object << endl;
+    }
+}
+```
+<br>
+
+**+ everything fixed and work properly** ✅  
+**+ counting operation is no longer in loop therefore will work properly** ✅  
+**+ loop correctly so code will work forever until we put the right value in!** ✅  
+<br>
+i fixed it 🔥
+<br>
+example if i give input as "hello", "hey what?", 72162, 110110011, 89
+- only 89 input will work because code only take integer that is under 100
+-i accidentally enter 72162 two times 😭
+```cpp
+enter your starting integer in range of under 100 : hello
+please enter an integer, try again : hey what?
+please enter an integer, try again : 72162
+please enter an integer under 100, try again : 72162
+please enter an integer under 100, try again : 110110011
+please enter an integer under 100, try again : 89
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+```
+_________________________________________________________________________
+<br>
+## OTHER RAW CODE
+
+```cpp
+#include <iostream>
+using namespace std;
+int main() {
+    int object;
+    cout << "enter your starting integer in range of under 100 : ";
+    cin >> object;
+    while(cin.fail()) {
+        cout << "please enter an integer, try again : ";
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cin >> object;
+        }
+    while(object > 100) {
+        cout << "please an integer that is under 100, try again : ";
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cin >> object;
+    }
+    for(object ; object <= 100 ; object++) {
+        cout << object << endl;
+    }
+}
+```
+my attempt to make code above work without taking a break,,,,, it went horribly as you can see code is pure mess
+
+<br>
+
+```cpp
+#include <iostream>
+using namespace std;
+int main() {
+    int object;
+    cout << "enter your starting integer in range of under 100 : ";
+    cin >> object;
+    while(cin.fail() || object > 100) {
+        if(cin.fail()) {
+            cout << "please enter an integer type of input, try again : ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cin >> object;
+        }
+        else if(object > 100) {
+            cout << "please enter and integer that is in range of under 100, try again : ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cin >>  object;
+        }
+        else {
+            for(object ; object <= 100 ; object++) {
+            cout << object << endl;
+            }
+        }
+    }
+    return 0;
+}
+```
+due for the fact that i did this without taking a break, i forgot about what i learned and put my counting operation in loop again causing whole code not to work
+<br>
+
+```cpp
+#include <iostream>
+#include <typeinfo>
+using namespace std;
+int main() {
+    int object;
+    cout << "enter your starting integer in range of under 100 : ";
+    cin >> object;
+    while(cin.fail() || object > 100) {
+        if(object < 0 || object >= 100 || ) {
+            for(object ; object <= 100 ; object++) {
+            cout << object << endl;
+            return 0;
+            }
+        }
+        else if(object > 100) {
+            cout << "please enter and integer that is in range of under 100, try again : ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cin >>  object;
+        }
+        else {
+            cout << "please enter an integer type of input, try again : ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cin >> object;
+        }
+    }
+    return 0;
+}
+```
+still does not work i dont even know what's different between this code and code above
+
+<br>
+
+```cpp
+#include <iostream>
+#include <typeinfo>
+using namespace std;
+int main() {
+    int object;
+    cout << "enter your starting integer in range of under 100 : ";
+    cin >> object;
+    while(cin.fail() || object > 100) {
+        if(!(typeid(object).name() == i)) {
+            cout << "please an integer type of input, try again : ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cin >> object;
+        }
+        else if(object > 100) {
+            cout << "please enter an integer with value under 100, try again : ";
+        } 
+    }
+    for(object ; object <= 100 ; object++) {
+            cout << object << endl;
+            return 0;
+    return 0;
+}
+```
+attempt to make working decision code like in python using !(typeid(object).name() == i, does NOT work at all even though code downward is fixed. this is not python and i dont know about decision making code yet or whatever it called
+
+<br>
+
+```cpp
+#include <iostream>
+#include <string>
+#include <limits>
+using namespace std;
+int main() {
+    int object;
+    cout << "please enter and integer with value under 100 : ";
+    while(!(cin >> object) || object > 100) {
+        if(object > 100){
+            cout << "please enter an integer with value under 100, try again : ";
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+        else if(cin.fail()) {
+            cout <<"please enter an integer type of input, try again : ";
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+    }
+    for(object ; object <= 100 ; object++) {
+        cout << object << endl;
+    }
+    return  0;
+}
+```
 
