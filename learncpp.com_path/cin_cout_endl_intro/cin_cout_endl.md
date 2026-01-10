@@ -225,3 +225,6 @@ int main()
 
 
 sorry this progress is not a halt because writing all these took 2 danm hours out of my life, i can NOT do these during whole course progress since i WILL ran out of time. i have like 9 months left before uni at current date so i dont have much time to spare! sorry for inconvenience
+
+you can find all the course detail at https://www.learncpp.com/ <br>
+whole thing is filled with ads but it teachs you down to hardware and not just software. yk good programmer need to know hardcare to have effective code so this is a really good source to learn from. i'll still continue my practice progress tho!
