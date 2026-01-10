@@ -218,5 +218,10 @@ int main()
 }
 ```
 
+<br>
+<br>
+<br>
+<br>
 
 
+sorry this progress is not a halt because writing all these took 2 danm hours out of my life, i can NOT do these during whole course progress since i WILL ran out of time. i have like 9 months left before uni at current date so i dont have much time to spare! sorry for inconvenience
